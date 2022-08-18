@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Game</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="lobby-section">
+        <h1>Cat Game</h1>
+        <img src="./img/cat-logo.png" alt="">
+        <h3>Enter a name of your kitty!</h3>
+        <input type="text" class="cat-name">
+        <p class="error">You have to choose a name of your cat!</p>
+        <button class="start-game">Start a game!</button>
+    </section>
+
+    <section class="game-section">
+        <h2 class="emotion-text"></h2>
+        <img class="happy cat" src="./img/happy-cat.png" alt="">
+        <div class="health-bars">
+            <div class="hunger">
+                <p class="hunger-bar">Hunger: <span class="hunger-number"></span></p>
+            </div>
+            <div class="thirst">
+                <p class="thirst-bar">Thirst: <span class="thirst-number"></span></p>
+            </div>
+            <div class="hapiness">
+                <p class="hapiness-bar">Hapiness: <span class="hapiness-number"></span></p>
+            </div>
+            <div class="age">
+                <p class="age-bar">Age: <span class="age-number">0</span></p>
+            </div>
+        </div>
+        <div class="health-buttons">
+            <button class="give-a-snack">Give a snack</button>
+            <button class="pour-the-milk">Pour the milk</button>
+            <button class="play-with-string">Play with a string</button>
+        </div>
+    </section>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
